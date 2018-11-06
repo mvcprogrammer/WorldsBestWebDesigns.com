@@ -1,0 +1,29 @@
+﻿<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="/assets/js/jquery-1.12.4.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.vanillabox-0.1.7.min.js"></script>
+<script src="/assets/js/slick.min.js"></script>
+<script src="/assets/js/bootstrap-select.min.js"></script>
+<script src="/assets/js/jquery.flexslider-min.js"></script>
+<script src="/assets/js/jquery.placeholder.min.js"></script>
+<script src="/assets/js/jquery.stellar.min.js"></script>
+<script src="/assets/js/wow.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#toggle-switcher').click(function () {
+            if (jQuery(this).hasClass('opened')) {
+                jQuery(this).removeClass('opened');
+                jQuery('#style-switcher').animate({ 'right': '-175px' });
+            } else {
+                jQuery(this).addClass('opened');
+                jQuery('#style-switcher').animate({ 'right': '-15px' });
+            }
+        });
+        jQuery('#bluetheme').click(function (e) {
+            e.preventDefault();
+            jQuery('#theme').attr('href', 'assets/css/main.css');
+            jQuery('.navbar-brand img').attr('src', 'assets/img/logo.png');
+        });
+    });
+</script>
